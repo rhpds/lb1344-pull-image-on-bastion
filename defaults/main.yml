@@ -6,5 +6,12 @@ lb1344_images:
     tag: "v4.14_2025_05_05"
   - name: "docker.io/library/nginx"
     tag: "latest"
-  - name: "docker.io/library/redis"
-    tag: "6.2"
+
+#### EXAMPLE for multiple images ####
+#lb1344_images:
+#  - name: "quay.io/gpte-devops-automation/olm_snapshot_redhat_catalog"
+#    tag: "v4.14_2025_05_05"
+#  - name: "docker.io/library/nginx"
+#    tag: "latest"
+#  - name: "docker.io/library/redis"
+#    tag: "6.2"
