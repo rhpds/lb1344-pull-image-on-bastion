@@ -9,9 +9,10 @@
     - name: Pull images for student
       become_user: "{{ lb1344_student_user }}"
       containers.podman.podman_image:
-        name: "{{ lb1344_image_name }}"
+        name: "{{ item.name }}"
         pull: true
-        tag: "{{ lb1344_tag }}"
+        tag: "{{ item.tag }}"
+      loop: "{{ lb1344_images }}"  
 
 #    - name: Set Ansible Python interpreter to k8s virtualenv
 #      ansible.builtin.set_fact:

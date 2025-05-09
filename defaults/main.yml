@@ -1,5 +1,10 @@
 ---
 lb1344_pull_image_on_bastion: false
 lb1344_student_user: "{{ student_name }}"
-lb1344_image_name: "quay.io/gpte-devops-automation/olm_snapshot_redhat_catalog"
-lb1344_tag: "v4.14_2025_05_05"
+lb1344_images:
+  - name: "quay.io/gpte-devops-automation/olm_snapshot_redhat_catalog"
+    tag: "v4.14_2025_05_05"
+  - name: "docker.io/library/nginx"
+    tag: "latest"
+  - name: "docker.io/library/redis"
+    tag: "6.2"
