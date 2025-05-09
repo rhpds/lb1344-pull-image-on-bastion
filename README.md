@@ -1,3 +1,4 @@
-# lb1344-pull-image-on-bastion
 
-Role to pull image on bastion using podman
+This role adds additional requirements on bastion.
+
+Currently focused only for lb2958

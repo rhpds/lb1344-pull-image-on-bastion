@@ -1,0 +1,5 @@
+---
+- name: Include podman pull tasks
+  when: lb1344_pull_image_on_bastion | bool
+  ansible.builtin.include_tasks:
+    file: pull-image-on-bastion.yml
