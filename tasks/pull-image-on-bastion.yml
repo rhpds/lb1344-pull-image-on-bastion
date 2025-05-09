@@ -7,7 +7,7 @@
 #        ansible_python_interpreter: /usr/libexec/platform-python
 
     - name: Pull images for student
-      become_user: "{{ lb1344_student_user }}"
+      become_user: "{{ lb1344_student_name }}"
       containers.podman.podman_image:
         name: "{{ item.name }}"
         pull: true
