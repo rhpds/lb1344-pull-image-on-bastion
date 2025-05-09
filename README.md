@@ -1,0 +1,1 @@
+# lb1344-pull-image-on-bastion
