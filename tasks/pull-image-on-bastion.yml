@@ -12,6 +12,8 @@
         name: "{{ item.name }}"
         pull: true
         tag: "{{ item.tag }}"
+        username: "{{ item.username | default(omit) }}"
+        password: "{{ item.password | default(omit) }}"
       loop: "{{ lb1344_images }}"  
 
 #    - name: Set Ansible Python interpreter to k8s virtualenv
